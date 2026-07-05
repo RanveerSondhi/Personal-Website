@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  />
+  <meta
+    name="description"
+    content="Ranveer Sondhi — self-taught front-end developer based in Toronto."
+  />
+  <title>Ranveer Sondhi — Front-End Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a href="#top" class="logo" aria-label="Ranveer Sondhi home">
+      <span class="logo-mark">RS</span>
+    </a>
+
+    <nav class="nav">
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+    </nav>
+  </header>
+
+  <div id="stickman" aria-hidden="true">
+    <div class="head"></div>
+    <div class="body"></div>
+    <div class="arm left"></div>
+    <div class="arm right"></div>
+    <div class="leg left"></div>
+    <div class="leg right"></div>
+    <div class="scarf"></div>
+  </div>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">Self-taught front-end developer · Toronto</p>
+
+        <h1>
+          I build websites
+          <span class="gradient-text">for fun.</span><br />
+          It’s my
+          <span class="gradient-text alt">passion, my hobby.</span>
+        </h1>
+
+        <p class="hero-text">
+          I enjoy turning ideas into smooth, interactive and responsive web
+          experiences. I started learning because I was curious and continued
+          because I genuinely enjoy creating.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#about">Get to know me</a>
+          <a class="btn btn-secondary" href="#projects">See what I’ve built</a>
+        </div>
+      </div>
+
+      <div class="hero-orb" aria-hidden="true"></div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-top">
+        <span class="section-number">01</span>
+        <p class="eyebrow">About Me</p>
+      </div>
+
+      <div class="glass-card about-card">
+        <div class="about-left">
+          <h2>
+            Curious mind.<br />
+            Creative heart.<br />
+            <span class="gradient-text">Code for joy.</span>
+          </h2>
+        </div>
+
+        <div class="about-right">
+          <p>
+            I’m Ranveer Sondhi, a self-taught front-end developer based in
+            Toronto. Web development started as something I explored for fun,
+            and it quickly became one of my favourite creative outlets.
+          </p>
+
+          <p>
+            With a background in Mechanical Engineering Technology, I naturally
+            enjoy problem-solving, structure, and attention to detail. I now
+            bring that same mindset into building modern web experiences.
+          </p>
+
+          <p>
+            I’m especially interested in responsive design, animation, visual
+            polish, and making websites feel interactive and alive.
+          </p>
+
+          <div class="tag-list">
+            <span>Self-taught</span>
+            <span>Responsive Design</span>
+            <span>Creative UI</span>
+            <span>Motion & Interaction</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-top">
+        <span class="section-number">02</span>
+        <p class="eyebrow">Projects</p>
+      </div>
+
+      <div class="projects-heading">
+        <h2>
+          Things I’ve built
+          <span class="gradient-text">just for the joy of it.</span>
+        </h2>
+        <p>
+          Personal projects and concepts that help me explore design, motion,
+          responsiveness, and real-world business website ideas.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-visual restaurant">
+            <span class="project-label">Concept Project</span>
+            <h3>Premium Indian Restaurant</h3>
+            <p>Elegant dining website with menu, reservations, and gallery.</p>
+          </div>
+          <div class="project-info">
+            <span class="project-type">Restaurant concept</span>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual auto">
+            <span class="project-label">Concept Project</span>
+            <h3>Automotive Repair Website</h3>
+            <p>Clean booking-focused site for local repair and service shops.</p>
+          </div>
+          <div class="project-info">
+            <span class="project-type">Business concept</span>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual portfolio">
+            <span class="project-label">Personal Project</span>
+            <h3>Interactive Portfolio</h3>
+            <p>
+              A mobile-first personal site with motion, ambience, and playful
+              interaction.
+            </p>
+          </div>
+          <div class="project-info">
+            <span class="project-type">Portfolio experiment</span>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section">
+    <div class="footer-copy">
+      <p class="eyebrow">Contact</p>
+      <h2>
+        Let’s create
+        <span class="gradient-text">something cool.</span>
+      </h2>
+      <p>
+        I’m open to freelance ideas, collaborations, and front-end
+        opportunities.
+      </p>
+    </div>
+
+    <form class="contact-form" id="contact-form">
+      <label>
+        Name
+        <input type="text" name="name" placeholder="Your name" required />
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="email" placeholder="you@example.com" required />
+      </label>
+
+      <label>
+        Message
+        <textarea name="message" rows="5" placeholder="Tell me about your idea" required></textarea>
+      </label>
+
+      <button type="submit" class="btn btn-primary">Send Message</button>
+      <p id="form-status" class="form-status"></p>
+    </form>
+
+    <div class="footer-links">
+      <a href="mailto:hello@ranveersondhi.com">Email</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <span>Toronto, Canada</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
